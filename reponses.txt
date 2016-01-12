@@ -10,3 +10,4 @@ Cas de plantage :
 	-Si le password n'est pas de type chaine de caractère il y aura un bloquage avec la fonction 'list()'
 
 
+Nombre de possibilités = 26 ^ n
