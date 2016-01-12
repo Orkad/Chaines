@@ -26,7 +26,17 @@ def getNext(password):
         
         return ''.join(pwd) #Concatenation de la liste de caractère en chaine de caractère
 
-
+def hasSeries(password):
+    pwd = list(password)
+    i = 1
+    suite = 1
+    while i < len(pwd)-1:
+        if pwd[i-1] == chr(ord(pwd[i])-1):
+           suite = suite + 1
+           if suite == 3:
+               return True
+        i = i + 1
+    return False
 
 # Grâce à ce fragment de code, si vous exécutez ce fichier, les tests doctests seront exécutés également. 
 # Si vous ne voulez plus que les tests s'exécutent, commentez les deux lignes ci-dessous. 
