@@ -1,2 +1,12 @@
 Nicolas Gidon / Romain Plassard 
 LP DASI 1
+
+Cas de plantage :
+	-Le mot de passe est vide => initialisera i a -1 et lorsque on appelle pwd[i] le programme plantera
+	-Si la chaine ne comporte que des z le i arrivera à une valeur negative et modifira le dernier caractère
+		de la chaine précédement modifié
+	-Si il y a un caractère non compris dans la chaine ASCII de 'a' à 'z' 
+		le programme ne plantera pas mais definira un mauvais mot de passe
+	-Si le password n'est pas de type chaine de caractère il y aura un bloquage avec la fonction 'list()'
+
+
